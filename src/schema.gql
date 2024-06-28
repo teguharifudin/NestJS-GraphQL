@@ -1,0 +1,36 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type BookEntity {
+  ID: Int!
+  CreatedDate: DateTime!
+  UpdatedDate: DateTime!
+  Name: String!
+  Author: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type deleteUserByID {
+  deletedRecordCount: Int!
+}
+
+type Query {
+  findAll: [BookEntity!]!
+  findBookByID(ID: Int!): BookEntity!
+}
+
+type Mutation {
+  createBook(bookData: createBook!): BookEntity!
+  deleteBookByID(ID: Int!): deleteUserByID!
+  updateBookByID(ID: Int!, updateBookData: createBook!): BookEntity!
+}
+
+input createBook {
+  Name: String!
+  Author: String!
+}
