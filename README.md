@@ -4,6 +4,15 @@
 
 NestJS CRUD with GraphQL, PostgreSQL, and TypeORM.
 
+## Database
+
+Download PostgreSQL installation packaged at https://postgresapp.com/
+
+And install on Terminal
+```
+brew install postgresql
+```
+
 ## Installation
 
 ### From source
@@ -13,15 +22,6 @@ git clone git@github.com:teguharifudin/NestJS-GraphQL.git
 ```
 ```
 cd NestJS-GraphQL
-```
-
-## Database
-
-Download PostgreSQL installation packaged at https://postgresapp.com/
-
-And install on Terminal
-```
-brew install postgresql
 ```
 
 ## Developing
